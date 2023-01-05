@@ -1,0 +1,83 @@
+
+C:\Users\HP\Desktop\thnzrafee\projectex3>virtualenv prenv
+created virtual environment CPython3.9.13.final.0-64 in 11244ms
+  creator CPython3Windows(dest=C:\Users\HP\Desktop\thnzrafee\projectex3\prenv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\HP\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.3.1, setuptools==65.6.3, wheel==0.38.4
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+C:\Users\HP\Desktop\thnzrafee\projectex3>prenv\scripts\activate
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3>pip list
+Package    Version
+---------- -------
+pip        22.3.1
+setuptools 65.6.3
+wheel      0.38.4
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3>pip install django
+Collecting django
+  Using cached Django-4.1.5-py3-none-any.whl (8.1 MB)
+Collecting tzdata
+  Using cached tzdata-2022.7-py2.py3-none-any.whl (340 kB)
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.6.0-py3-none-any.whl (23 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.6.0 django-4.1.5 sqlparse-0.4.3 tzdata-2022.7
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3>pip list
+Package    Version
+---------- -------
+asgiref    3.6.0
+Django     4.1.5
+pip        22.3.1
+setuptools 65.6.3
+sqlparse   0.4.3
+tzdata     2022.7
+wheel      0.38.4
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3>django-admin startproject hospital
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3>code .
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3>cd hospital
+
+(prenv) C:\Users\HP\Desktop\thnzrafee\projectex3\hospital>py manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 05, 2023 - 13:19:30
+Django version 4.1.5, using settings 'hospital.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[05/Jan/2023 13:20:05] "GET / HTTP/1.1" 200 10681
+[05/Jan/2023 13:20:05] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[05/Jan/2023 13:20:05] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[05/Jan/2023 13:20:05] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[05/Jan/2023 13:20:05] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[05/Jan/2023 13:20:05] "GET /favicon.ico HTTP/1.1" 404 2112
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
